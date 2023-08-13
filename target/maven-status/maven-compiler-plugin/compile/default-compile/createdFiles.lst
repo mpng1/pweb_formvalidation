@@ -1,0 +1,4 @@
+br\edu\ifal\pweb_formvalidation\servlet\PreMatriculaSucessoServlet.class
+br\edu\ifal\pweb_formvalidation\servlet\PreMatriculaServlet.class
+br\edu\ifal\pweb_formvalidation\servlet\FormServlet.class
+br\edu\ifal\pweb_formvalidation\servlet\PreMatriculaErroServlet.class
