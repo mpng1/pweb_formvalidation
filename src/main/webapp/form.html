@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="UTF-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title>Escola Virtual</title>	
+	</head>
+	<body>
+	<h1>Escola Virtual</h1>
+	<h2>Formulário de Pré-Matrícula</h2>
+	<div>
+		<form action="/pweb_formvalidation/prematricula" method="post" accept-charset="UTF-8">
+			<h3>Dados Pessoais</h3>
+			<label for="nome">Nome do Aluno: </label>
+			<input type="text" name="nome"/><br>
+			<label for="nascimento">Nascimento: </label>
+			<input type="date" name="nascimento" value="Nascimento"/><br>
+			<label for="nomedamae">Nome da mãe: </label>
+			<input type="text" name="nomemae"/><br>
+			<label for="nomedopai">Nome do pai: </label>
+			<input type="text" name="nomepai"/><br>
+			<label for="telefone">Telefone: </label>
+			<input type="tel" name="telefone"/><br>
+			<label for="email">Email: </label>
+			<input type="email" name="email"/><br>
+			<h3>Informações de Matrícula</h3>
+			<label for="serie">Série:</label><br>
+			<select id="serie" name="serie">
+				<option value="Pré-Escola">Pré-Escola</option><br>
+				<option value="Primeiro ano">Primeiro ano</option><br>
+				<option value="Segundo ano">Segundo ano</option><br>
+				<option value="Terceiro ano">Terceiro ano</option><br>
+				<option value="Quarto ano">Quarto ano</option><br>
+				<option value="Quinto ano">Quinto ano</option><br>
+				<option value="Sexto ano">Sexto ano</option><br>
+				<option value="Sétimo ano">Sétimo ano</option><br>
+				<option value="Oitavo ano">Oitavo ano</option><br>
+			</select><br>
+			<p>Turno:</p>			
+			<input type="radio" name="turno" id="turno1" value="Manha">
+			<label for="turno1">Manhã</label><br>
+			<input type="radio" name="turno" id="turno2" value="Tarde">
+			<label for="turno2">Tarde</label><br>
+			<h3>Atividades Extracurriculares</h3>
+			<input type="checkbox" name="extracurriculars" id="informatica" value="Informatica">
+			<label for="informatica">Informática</label><br>
+			<input type="checkbox" name="extracurriculars" id="musica" value="Musica">
+			<label for="musica">Música</label><br> 
+			<input type="checkbox" name="extracurriculars" id="ballet" value="Ballet">
+			<label for="ballet">Ballet</label><br> 
+			<input type="checkbox" name="extracurriculars" id="pintura" value="Pintura">
+			<label for="pintura">Pintura</label><br> 
+			<input type="checkbox" name="extracurriculars" id="judo" value="Judo">
+			<label for="judo">Judô</label><br> 
+			<input type="checkbox" name="extracurriculars" id="futebol" value="Futebol">
+			<label for="futebol">Futebol</label><br>
+			<br>
+			<input type="submit" value="Enviar Formulário"/>
+			<input type="reset" value="Limpar formulario"/> 
+		</form>
+	</div>	
+	</body>
+</html>
