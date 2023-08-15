@@ -55,7 +55,7 @@ public class PreMatriculaServlet extends HttpServlet {
             errorMessages.append("- Nome do Aluno inválido.<br>");
         }
         if (nascimento == null || !isValidDate(nascimento)) {
-            errorMessages.append("- Data de nascimento inválido.<br>");
+            errorMessages.append("- Data de nascimento inválida.<br>");
         }
         if (nomeMae == null || nomeMae.isEmpty()) {
             errorMessages.append("- Nome da mãe inválido.<br>");
