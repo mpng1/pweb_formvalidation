@@ -38,7 +38,7 @@
 				<option value="Sétimo ano">Sétimo ano</option><br>
 				<option value="Oitavo ano">Oitavo ano</option><br>
 			</select><br>
-			<h3>Turno:</h3>			
+			<p>Turno:</p>			
 			<input type="radio" name="turno" id="turno1" value="Manha">
 			<label for="turno1">Manhã</label><br>
 			<input type="radio" name="turno" id="turno2" value="Tarde">

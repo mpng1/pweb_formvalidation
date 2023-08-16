@@ -1,0 +1,19 @@
+version: '3'
+services:
+  maven-build:
+    image: maven:3.8.3-amazoncorretto-17
+    container_name: maven_pweb
+    volumes:
+      - ./:/usr/src/app
+    working_dir: /usr/src/app
+    command: mvn clean package
+
+  tomcat:
+    image: tomcat:9.0
+    container_name: my-tomcat-app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - maven-build
+    volumes:
+      - ./target:/usr/local/tomcat/webapps
